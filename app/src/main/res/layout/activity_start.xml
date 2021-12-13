@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.behrooz.information.Episodes.StartActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="?actionBarItemBackground"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/firstName"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+
+                android:id="@+id/l1"
+                style="@style/l_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/xiaomi"
+                    style="@style/l_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/image"
+                        android:src="@drawable/xiaomi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/xiaomi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/samsung"
+
+                    style="@style/l_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/image"
+                        android:src="@drawable/samsung" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/samsung" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                style="@style/l_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/apple"
+                    style="@style/l_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/image"
+                        android:src="@drawable/apple" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/apple" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nokia"
+                    style="@style/l_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nokia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/nokia" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                style="@style/l_horizontal"
+                android:layout_below="@id/l2">
+
+                <LinearLayout
+                    android:id="@+id/huawei"
+                    style="@style/l_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/image"
+                        android:padding="30dp"
+                        android:src="@drawable/huawei" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/huawei" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/motorola"
+                    style="@style/l_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/image"
+                        android:src="@drawable/motorola" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/motorola" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
